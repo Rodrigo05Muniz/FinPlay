@@ -1,0 +1,30 @@
+:root {
+    /* Cores Principais */
+    --cor-background-primary: #26272e;
+    --cor-background-secondary: #202123;
+    --cor-background-tertiary: #363742;
+    --cor-background-chat: #444654;
+    
+    /* Cores de Texto */
+    --cor-texto-primary: #ececf1;
+    --cor-texto-secondary: #c5c5d2;
+    
+    /* Cores de Destaque */
+    --cor-accent-primary: #10a37f;
+    --cor-accent-hover: #0d8c6b;
+    --cor-border: #4d4d4f;  
+    --cor-border-secondary: #565869;
+    
+    /* Cores de Mensagens */
+    --cor-mensagem-usuario: #10a37f;
+    --cor-mensagem-bot: #444654;
+    
+    /* Fontes */
+    --fonte-principal: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, sans-serif;
+
+    /* Tamanhos */
+    --sidebar-width: 260px;
+    --border-radius: 8px;
+    --border-radius-small: 6px;
+    --border-radius-message: 12px;
+}
