@@ -20,6 +20,13 @@
     margin: 0;
     text-align: center;
 }
+.sidebar-subtitle{
+    font-size: 15px;
+    color: var(--cor-texto-primary);
+    margin: 4px 0 0 0;
+    text-align: center;
+}
+
 
 .sidebar-menu {
     flex: 1;
@@ -119,6 +126,11 @@
         height: auto;
         border-right: none;
         border-bottom: 1px solid var(--cor-border);
+        position: fixed;
+        top: 0;
+        left: 0;
+        overflow-y: auto;
+        z-index: 100;
     }
     
     .sidebar-menu {

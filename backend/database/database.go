@@ -31,7 +31,7 @@ func Connect() error {
 		user = "postgres"
 	}
 	if dbname == "" {
-		dbname = "hello_world_db"
+		dbname = "finplay_db"
 	}
 
 	connStr := fmt.Sprintf(

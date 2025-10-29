@@ -4,9 +4,9 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
-	"hello-world-chatbot/backend/database"
-	"hello-world-chatbot/backend/handlers"
-	"hello-world-chatbot/backend/middleware"
+	"finplay/backend/database"
+	"finplay/backend/handlers"
+	"finplay/backend/middleware"
 	"io"
 	"log"
 	"net/http"
@@ -147,7 +147,7 @@ func handleChat(w http.ResponseWriter, r *http.Request) {
 	messages := []Message{
 		{
 			Role: "system",
-			Content: `Você é um assistente virtual da loja "Hello World". 
+			Content: `Você é um assistente virtual da loja "FinPlay". 
 Suas funções:
 1. Informar sobre produtos e catálogo
 			1.1 o catálogo contém: Hamburguers

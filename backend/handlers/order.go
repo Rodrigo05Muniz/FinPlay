@@ -3,9 +3,9 @@ package handlers
 
 import (
 	"encoding/json"
-	"hello-world-chatbot/backend/database"
-	"hello-world-chatbot/backend/middleware"
-	"hello-world-chatbot/backend/models"
+	"finplay/backend/database"
+	"finplay/backend/middleware"
+	"finplay/backend/models"
 	"log"
 	"net/http"
 )

@@ -1,6 +1,6 @@
 // Arquivo: backend/go.mod
 
-module hello-world-chatbot/backend
+module finplay/backend
 
 go 1.21
 

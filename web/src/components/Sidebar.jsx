@@ -1,40 +1,40 @@
 import React from 'react';
 import '../styles/sidebar.css';
 
-const Sidebar = ({ currentPage, onNavigate, user, onLogout }) => {
+const Sidebar = ({ user, onLogout }) => {
     return (
         <div className="sidebar">
             <div className="sidebar-header">
                 <h2 className="sidebar-title">FinPlay</h2>
+                <p className="sidebar-subtitle">Serviços Profissionais</p>
                 {user && (
                     <p className="sidebar-user">Olá, {user.full_name || user.email}</p>
                 )}
             </div>
             
             <div className="sidebar-menu">
-                <button
-                    className={`sidebar-button ${currentPage === 'home' ? 'active' : ''}`}
-                    onClick={() => onNavigate('home')}
-                >
-                    <span className="sidebar-icon">📖</span>
-                    <span className="sidebar-text">Documentação</span>
-                </button>
+                <div className="sidebar-info">
+                    <h3 className="sidebar-info-title">Serviços Disponíveis</h3>
+                    <ul className="sidebar-info-list">
+                        <li> Pedreiro</li>
+                        <li> Pintor</li>
+                        <li> Encanador</li>
+                        <li> Doméstica</li>
+                        <li> Babá</li>
+                        <li> Cabeleireira</li>
+                        <li> Manicure</li>
+                    </ul>
+                </div>
                 
-                <button
-                    className={`sidebar-button ${currentPage === 'chat' ? 'active' : ''}`}
-                    onClick={() => onNavigate('chat')}
-                >
-                    <span className="sidebar-icon">💬</span>
-                    <span className="sidebar-text">Chat Simples</span>
-                </button>
-                
-                <button
-                    className={`sidebar-button ${currentPage === 'chatgpt' ? 'active' : ''}`}
-                    onClick={() => onNavigate('chatgpt')}
-                >
-                    <span className="sidebar-icon">🤖</span>
-                    <span className="sidebar-text">Chat GPT</span>
-                </button>
+                <div className="sidebar-features">
+                    <h3 className="sidebar-info-title">Funcionalidades</h3>
+                    <ul className="sidebar-info-list">
+                        <li> Atendimento automatizado</li>
+                        <li> Assistente com IA</li>
+                        <li> Catálogo interativo</li>
+                        <li> Agendamento fácil</li>
+                    </ul>
+                </div>
             </div>
             
             <div className="sidebar-footer">
@@ -42,10 +42,10 @@ const Sidebar = ({ currentPage, onNavigate, user, onLogout }) => {
                     className="sidebar-logout-button"
                     onClick={onLogout}
                 >
-                    <span className="sidebar-icon"></span>
+                    <span className="sidebar-icon">🚪</span>
                     <span className="sidebar-text">Sair</span>
                 </button>
-                <p className="sidebar-version">v1.1.0</p>
+                <p className="sidebar-version">v2.0.0</p>
             </div>
         </div>
     );

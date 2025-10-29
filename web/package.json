@@ -1,7 +1,7 @@
 {
-  "name": "hello-world-chatbot",
+  "name": "finplay-chatbot",
   "version": "1.0.0",
-  "description": "Chatbot de atendimento automatizado",
+  "description": "FinPlay - Chatbot de atendimento automatizado",
   "private": true,
   "dependencies": {
     "react": "^18.2.0",

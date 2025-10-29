@@ -1,9 +1,9 @@
 -- Criação do banco de dados e tabelas
 
 -- Criar banco de dados (executar como superuser)
--- CREATE DATABASE hello_world_db;
+-- CREATE DATABASE finplay_db;
 
--- Conectar ao banco: \c hello_world_db
+-- Conectar ao banco: \c finplay_db
 
 -- Extensão para UUID
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
